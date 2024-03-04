@@ -1,0 +1,275 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "GestorEmpresas",
+    "dateExported": "2024-03-04T04:06:58.491Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "4d8d2cb0-837d-4cea-a809-5d01fb312e3e",
+            "name": "Admin",
+            "containerId": "",
+            "created": "2024-03-04T00:50:15.477Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "cef85e1b-e309-4d77-abe3-81ac9fb2889d",
+            "name": "Empresa",
+            "containerId": "",
+            "created": "2024-03-04T00:50:21.167Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "0dc1b9ba-b687-4953-a60c-70c9f1a7c3c8",
+            "colId": "b3057c47-e17d-44e4-ae98-b91496b7ac45",
+            "containerId": "4d8d2cb0-837d-4cea-a809-5d01fb312e3e",
+            "name": "Register",
+            "url": "/admin/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-04T00:50:28.750Z",
+            "modified": "2024-03-04T00:54:17.144Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Armando"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Bermudez"
+                    },
+                    {
+                        "name": "adminname",
+                        "value": "Abermudez"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "email",
+                        "value": "barmando@gmail.com"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "12345678"
+                    },
+                    {
+                        "name": "role",
+                        "value": "ADMIN"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f69a798a-a2a4-413f-b284-1b029e6d35d0",
+            "colId": "b3057c47-e17d-44e4-ae98-b91496b7ac45",
+            "containerId": "4d8d2cb0-837d-4cea-a809-5d01fb312e3e",
+            "name": "Login",
+            "url": "/admin/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-04T00:50:32.891Z",
+            "modified": "2024-03-04T00:55:19.997Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "identifier",
+                        "value": "barmando@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "12345678"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "59b80aca-e424-46a7-9455-28c9a00d8dbe",
+            "colId": "b3057c47-e17d-44e4-ae98-b91496b7ac45",
+            "containerId": "cef85e1b-e309-4d77-abe3-81ac9fb2889d",
+            "name": "Save",
+            "url": "/empresa/save",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-04T00:50:39.371Z",
+            "modified": "2024-03-04T03:19:27.929Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1MWJiYTQ0MGNhNmI1NDk2MzQ2OGYiLCJuYW1lIjoiQXJtYW5kbyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUxMzcyMCwiZXhwIjoxNzA5NTMxNzIwfQ.bTX6uod4lLIVievISaHIvVSs0WkcRHVNPq42n_OmLfQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nombre",
+                        "value": "Apple"
+                    },
+                    {
+                        "name": "impacto",
+                        "value": "grande"
+                    },
+                    {
+                        "name": "trayectoria",
+                        "value": "60 años"
+                    },
+                    {
+                        "name": "categoria",
+                        "value": "Dispositivos"
+                    },
+                    {
+                        "name": "numeroEmpleados",
+                        "value": "1000"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "bd374ab5-230f-412c-bd30-da2320086986",
+            "colId": "b3057c47-e17d-44e4-ae98-b91496b7ac45",
+            "containerId": "cef85e1b-e309-4d77-abe3-81ac9fb2889d",
+            "name": "Search",
+            "url": "/empresa/search",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-03-04T00:50:50.883Z",
+            "modified": "2024-03-04T03:19:02.125Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1MWJiYTQ0MGNhNmI1NDk2MzQ2OGYiLCJuYW1lIjoiQXJtYW5kbyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUxMzcyMCwiZXhwIjoxNzA5NTMxNzIwfQ.bTX6uod4lLIVievISaHIvVSs0WkcRHVNPq42n_OmLfQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "sortBy",
+                        "value": "Z-A"
+                    },
+                    {
+                        "name": "categoria",
+                        "value": "Dispositivos",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "trayectoria",
+                        "value": "50 años",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "da417157-7fe9-4409-9b2e-a694c63aa2de",
+            "colId": "b3057c47-e17d-44e4-ae98-b91496b7ac45",
+            "containerId": "cef85e1b-e309-4d77-abe3-81ac9fb2889d",
+            "name": "update",
+            "url": "/empresa/update/65e5361ce28fe5b5d5dad861",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-03-04T00:51:07.927Z",
+            "modified": "2024-03-04T02:49:13.685Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1MWJiYTQ0MGNhNmI1NDk2MzQ2OGYiLCJuYW1lIjoiQXJtYW5kbyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUxMzcyMCwiZXhwIjoxNzA5NTMxNzIwfQ.bTX6uod4lLIVievISaHIvVSs0WkcRHVNPq42n_OmLfQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nombre",
+                        "value": "Clarito"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f5223e58-0277-4aa5-87d9-1f3b30dc5d85",
+            "colId": "b3057c47-e17d-44e4-ae98-b91496b7ac45",
+            "containerId": "cef85e1b-e309-4d77-abe3-81ac9fb2889d",
+            "name": "delete",
+            "url": "/empresa/delete/65e5362fe28fe5b5d5dad864",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-03-04T00:51:12.368Z",
+            "modified": "2024-03-04T04:03:13.602Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1MWJiYTQ0MGNhNmI1NDk2MzQ2OGYiLCJuYW1lIjoiQXJtYW5kbyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUxMzcyMCwiZXhwIjoxNzA5NTMxNzIwfQ.bTX6uod4lLIVievISaHIvVSs0WkcRHVNPq42n_OmLfQ"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7133bb01-5128-4b11-a7a1-cbf69436a434",
+            "colId": "b3057c47-e17d-44e4-ae98-b91496b7ac45",
+            "containerId": "cef85e1b-e309-4d77-abe3-81ac9fb2889d",
+            "name": "excel",
+            "url": "/empresa/generate",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-03-04T00:51:27.443Z",
+            "modified": "2024-03-04T03:56:45.114Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1MWJiYTQ0MGNhNmI1NDk2MzQ2OGYiLCJuYW1lIjoiQXJtYW5kbyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUxMzcyMCwiZXhwIjoxNzA5NTMxNzIwfQ.bTX6uod4lLIVievISaHIvVSs0WkcRHVNPq42n_OmLfQ"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c2fa084c-ddef-42d5-994b-aa83741dc1a7",
+            "colId": "b3057c47-e17d-44e4-ae98-b91496b7ac45",
+            "containerId": "4d8d2cb0-837d-4cea-a809-5d01fb312e3e",
+            "name": "delete",
+            "url": "/admin/delete/65e51bba440ca6b54963468f",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2024-03-04T01:21:37.144Z",
+            "modified": "2024-03-04T01:24:57.818Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU1MWJiYTQ0MGNhNmI1NDk2MzQ2OGYiLCJuYW1lIjoiQXJtYW5kbyIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTUxMzcyMCwiZXhwIjoxNzA5NTMxNzIwfQ.bTX6uod4lLIVievISaHIvVSs0WkcRHVNPq42n_OmLfQ"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "http://localhost:2656"
+        }
+    }
+}
